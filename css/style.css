@@ -1,8 +1,9 @@
 body {
   font-family: sans-serif;
+  position: absolute;
 }
 
-/* Make content area fill the entire browser window */
+
 html,
 .fullscreen {
   display: flex;
@@ -12,12 +13,28 @@ html,
   width: 100%;
 }
 
-/* Center the content in the browser window */
 .container {
+  display: flex;
+  flex-direction: column;
+  
   margin: auto;
   text-align: center;
+  justify-content: center;
 }
 
 .title {
   font-size: 3rem;
+  margin-bottom: 20vh;
 }
+
+.result {
+  
+  justify-content: center;
+  align-items: center;
+  margin-left: 25%;
+  width: 250px;
+  height: 60px;
+  border: 5px solid blue;
+  border-radius: 5px;
+}
+
